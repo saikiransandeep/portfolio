@@ -79,7 +79,7 @@
       <!----------mobile menu------------>
       <ul
         id="sideMenu"
-        class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo dark:bg-[#2a004a] dark:text-white"
+        class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo dark:bg-darkHover dark:text-white"
       >
         <div class="absolute right-6 top-6" onclick="closeMenu()">
           <img
@@ -106,7 +106,11 @@
     <div
       class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4"
     >
-      <img src="./images/profile-img.png" alt="" class="rounded-full w-32" />
+      <img
+        src="./images/profile-img.png"
+        alt=""
+        class="rounded-full w-32 mt-16"
+      />
       <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3 font-Ovo">
         Hi! I'm Saikiran <img src="./images/hand-icon.png" alt="" class="w-6" />
       </h3>
@@ -414,7 +418,7 @@
       </div>
       <a
         href="#"
-        class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-[#2a004a]"
+        class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover"
         >Show more
         <img
           src="./images/right-arrow-bold.png"
@@ -439,26 +443,41 @@
         I'd love to hear from you! If you have any questions, comments or
         feedback, please use the form below.
       </p>
-      <form action="" class="max-w-2xl mx-auto">
+      <form
+        method="POST"
+        action="https://api.web3forms.com/submit"
+        class="max-w-2xl mx-auto"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="13f5c834-6667-420d-912f-99944f43765d"
+        />
         <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
           <input
             type="text"
             placeholder="Enter Your name"
             class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
+            required
+            name="name"
           />
           <input
             type="email"
             placeholder="Enter Your email"
             class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
+            required
+            name="email"
           />
         </div>
         <textarea
           rows="6"
           placeholder="Enter your message"
           class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90"
+          required
+          name="message"
         ></textarea>
         <button
-          class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500"
+          class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover"
         >
           Submit now
           <img src="./images/right-arrow-white.png" alt="" class="w-4" />
@@ -469,9 +488,23 @@
     <!-- ------------------footer section------------------->
     <div class="mt-20">
       <div class="text-center">
-        <img src="./images/logo.png" alt="" class="w-36 mx-auto mb-2" />
+        <img
+          src="./images/logo.png"
+          alt=""
+          class="w-36 mx-auto mb-2 dark:hidden"
+        />
+        <img
+          src="./images/logo_dark.png"
+          alt=""
+          class="w-36 mx-auto mb-2 hidden dark:block"
+        />
         <div class="w-max flex items-center gap-2 mx-auto">
-          <img src="./images/mail_icon.png " alt="" class="w-6" />
+          <img src="./images/mail_icon.png " alt="" class="w-6 hidden" />
+          <img
+            src="./images/mail_icon_dark.png "
+            alt=""
+            class="w-6 hidden dark:block"
+          />
           saikiransandeep1@gmail.com
         </div>
       </div>
