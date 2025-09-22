@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Saikiran_portfolio</title>
+    <title>Saikiran portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,6 +12,30 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap"
       rel="stylesheet"
     />
+    <style>
+      /* Subtle upward "pop" for the five desktop nav buttons only */
+      /* Smooth, GPU-accelerated transform with reduced-motion support */
+      @media (min-width: 768px) {
+        nav > ul.md-nav > li > a {
+          display: inline-flex; /* keep children aligned and allow transform */
+          transform: translateY(0);
+          will-change: transform;
+          transition: transform 300ms cubic-bezier(.22,.9,.3,1);
+        }
+
+        nav > ul.md-nav > li > a:hover,
+        nav > ul.md-nav > li > a:focus {
+          transform: translateY(-4px);
+        }
+      }
+
+      /* Respect users who prefer reduced motion */
+      @media (prefers-reduced-motion: reduce) {
+        nav > ul.md-nav > li > a {
+          transition: none;
+        }
+      }
+    </style>
   </head>
   <body
     class="overflow-x-hidden font-Outfit leading-6 dark:bg-darkTheme dark:text-white"
@@ -19,11 +43,11 @@
     <div
       class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden"
     >
-      <img src="./images/header-bg-color.png" alt="" class="w-full >" />
+      <!-- <img src="./images/header-bg-color.png" alt="" class="w-full >" /> -->
     </div>
 
     <nav
-      class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50"
+      class="w-full fixed left-0 top-0 px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50"
     >
       <img
         src="./images/logo.png"
@@ -36,7 +60,7 @@
         class="w-28 cursor-pointer mr-14 hidden dark:block"
       />
       <ul
-        class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/50 dark:bg-transparent"
+        class="hidden md:flex md-nav items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/50 dark:bg-transparent"
       >
         <li><a href="#top">Home</a></li>
         <li><a href="#about">About me</a></li>
@@ -57,7 +81,7 @@
 
         <a
           href="#contact"
-          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50"
+          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover"
           >Contact
           <img src="./images/arrow-icon.png" alt="" class="w-3 dark:hidden" />
           <img
@@ -79,7 +103,7 @@
       <!----------mobile menu------------>
       <ul
         id="sideMenu"
-        class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo dark:bg-darkHover dark:text-white"
+        class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-sky-50 transition duration-500 font-Ovo dark:bg-darkHover dark:text-white"
       >
         <div class="absolute right-6 top-6" onclick="closeMenu()">
           <img
@@ -103,43 +127,45 @@
     </nav>
 
     <!---------------header section------------------>
-    <div
-      class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4"
-    >
-      <img
-        src="./images/profile-img.png"
-        alt=""
-        class="rounded-full w-32 mt-16"
-      />
-      <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3 font-Ovo">
-        Hi! I'm Saikiran <img src="./images/hand-icon.png" alt="" class="w-6" />
-      </h3>
-      <h1 class="text-3xl sm:text-6xl lg:text-[66xl] font-Ovo">
-        Full Stack Web Developer
-      </h1>
-      <p class="max-w-2xl mx-auto font-Ovo">
-        I’m focused on sharpening my development skills by working on impactful projects within dynamic, collaborative teams.
-      </p>
+    <!-- Full-bleed hero wrapper. Nav offset is 5vh. -->
+  <div id="top" class="relative w-full mt-[4rem]" style="height: calc(100vh - 4rem);">
+      <!-- Centered content inside the hero -->
+      <div class="w-11/12 max-w-3xl text-center mx-auto h-full flex flex-col items-center justify-center gap-4">
+        <img
+          src="./images/homepic.png"
+          alt=""
+          class="rounded-full w-32 mt-16"
+        />
+        <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3 font-Ovo">
+          Hi! I'm Saikiran <img src="./images/hand-icon.png" alt="" class="w-6" />
+        </h3>
+        <h1 class="text-3xl sm:text-6xl lg:text-[66xl] font-Ovo">
+          Full Stack Web Developer
+        </h1>
+        <p class="max-w-2xl mx-auto font-Ovo">
+          I’m focused on sharpening my development skills by working on impactful projects within dynamic, collaborative teams.
+        </p>
 
-      <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
-        <a
-          href="#contact"
-          class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent"
-          >Contact me
-          <img src="./images/right-arrow-white.png" alt="" class="w-4"
-        /></a>
-        <a
-          href="https://drive.google.com/file/d/1mEwlgN55dc_ioBKGxaHEThoaKoJf8A1h/view?usp=drive_link"
-          download
-          class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black""
-        >
-          My resume
-          <img
-            src="./images/download-icon.png"
-            alt=""
-            class="w-4"
-          />
-        </a>
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+          <a
+            href="#contact"
+            class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent"
+            >Contact me
+            <img src="./images/right-arrow-white.png" alt="" class="w-4"
+          /></a>
+          <a
+            href="https://drive.google.com/file/d/1mEwlgN55dc_ioBKGxaHEThoaKoJf8A1h/view?usp=drive_link"
+            download
+            class="px-10 py-3 border rounded-full hover:bg-lightHover duration-500 border-gray-500 flex items-center gap-2 bg-white dark:text-black""
+          >
+            My resume
+            <img
+              src="./images/download-icon.png"
+              alt=""
+              class="w-4"
+            />
+          </a>
+        </div>
       </div>
     </div>
 
@@ -151,11 +177,11 @@
       <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
         <div class="max-w-max mx-auto relative">
           <img
-            src="./images/user-image.png"
+            src="./images/mee1.png.jpg"
             alt=""
-            class="w-64 sm:w-80 rouded-3xl max-w-none"
+            class="w-64 sm:w-80 rounded-3xl max-w-none"
           />
-          <div
+          <!-- <div
             class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex item-center justify-center"
           >
             <img
@@ -168,7 +194,7 @@
               alt=""
               class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             />
-          </div>
+          </div> -->
         </div>
         <div class="flex-1">
           <p class="mb-10 max-w-2xl font-Ovo">
@@ -240,33 +266,37 @@
             </li>
           </ul>
           <h4 class="my-6 text-gray-700 font-Ovo dark:text-white/80">
-            Tools i use
+            Find Me On
           </h4>
           <ul class="flex items-center gap-3 sm:gap-5">
-            <li
-              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 hover:shadow-black"
-            >
-              <img src="./images/vscode.png" alt="" class="w-5 sm:w-7" />
+            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+              <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer">
+                <img id="leetcode-logo" src="./images/leetcode.png" alt="LeetCode" class="w-5 sm:w-7" data-light="./images/leetcode.png" data-dark="./images/LeetCode_Logo_1.png" />
+              </a>
             </li>
-            <li
-              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 hover:shadow-black"
-            >
-              <img src="./images/firebase.png" alt="" class="w-5 sm:w-7" />
+
+            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+              <a href="https://github.com/saikiransandeep" target="_blank" rel="noopener noreferrer">
+                <img id="github-logo" src="./images/github.png" alt="GitHub" class="w-5 sm:w-7" data-light="./images/github.png" data-dark="./images/gitdark.png" />
+              </a>
             </li>
-            <li
-              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 hover:shadow-black"
-            >
-              <img src="./images/mongodb.png" alt="" class="w-5 sm:w-7" />
+
+            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+              <a href="https://auth.geeksforgeeks.org/" target="_blank" rel="noopener noreferrer">
+                <img src="./images/gfg.png" alt="GFG" class="w-5 sm:w-7" />
+              </a>
             </li>
-            <li
-              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 hover:shadow-black"
-            >
-              <img src="./images/figma.png" alt="" class="w-5 sm:w-7" />
+
+            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+              <a href="https://codolio.com/profile/sai%20kiran" target="_blank" rel="noopener noreferrer">
+                <img src="./images/codolio.png" alt="Codolio" class="w-5 sm:w-7" />
+              </a>
             </li>
-            <li
-              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 hover:shadow-black"
-            >
-              <img src="./images/git.png" alt="" class="w-5 sm:w-7" />
+
+            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+              <a href="https://www.linkedin.com/in/saikiransandeep" target="_blank" rel="noopener noreferrer">
+                <img src="./images/linkedinico.png" alt="linkedin" class="w-5 sm:w-7" />
+              </a>
             </li>
           </ul>
         </div>
@@ -360,7 +390,7 @@
               <p class="text-sm text-gray-700">Web design</p>
             </div>
             <div
-              class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+              class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-fuchsia-200 transition"
             >
               <img src="./images/send-icon.png" alt="" class="w-5" />
             </div>
@@ -373,11 +403,11 @@
             class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
           >
             <div>
-              <h2 class="font-semibold">Geo based app</h2>
+              <h2 class="font-semibold">ADM app</h2>
               <p class="text-sm text-gray-700">mobile app</p>
             </div>
             <div
-              class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+              class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-fuchsia-200 transition"
             >
               <img src="./images/send-icon.png" alt="" class="w-5" />
             </div>
@@ -390,13 +420,15 @@
             class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
           >
             <div>
-              <h2 class="font-semibold">Photography site</h2>
+              <h2 class="font-semibold">Find Movie site</h2>
               <p class="text-sm text-gray-700">Web design</p>
             </div>
             <div
-              class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+              class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-fuchsia-200 transition"
             >
+            <a href="https://saikiransandeep.github.io/CineStream/" target="_blank" rel="noopener noreferrer">
               <img src="./images/send-icon.png" alt="" class="w-5" />
+              </a>
             </div>
           </div>
         </div>
@@ -411,7 +443,7 @@
               <p class="text-sm text-gray-700">UI/UX Design</p>
             </div>
             <div
-              class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+              class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-fuchsia-200 transition"
             >
               <img src="./images/send-icon.png" alt="" class="w-5" />
             </div>
@@ -518,7 +550,7 @@
           <li><a href="https://codolio.com/profile/sai%20kiran">Codolio</a></li>
           <li><a href="https://github.com/saikiransandeep">GitHub</a></li>
           <li>
-            <a href=":https://www.linkedin.com/in/saikiransandeep">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/saikiransandeep">LinkedIn</a>
           </li>
         </ul>
       </div>
