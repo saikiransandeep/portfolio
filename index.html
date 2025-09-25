@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style.css" />
     <style>
       /* Subtle upward "pop" for the five desktop nav buttons only */
       /* Smooth, GPU-accelerated transform with reduced-motion support */
@@ -37,9 +38,17 @@
       }
     </style>
   </head>
-  <body
-    class="overflow-x-hidden font-Outfit leading-6 dark:bg-darkTheme dark:text-white"
-  >
+  <body class="overflow-x-hidden font-Outfit leading-6 dark:bg-darkTheme dark:text-white ">
+    <!-- Video background for homepage -->
+    <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover -z-10 dark:hidden">
+      <source src="bgvideo/vecteezy_abstract-white-wavy-background_2015487.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <!-- Video background for homepage (Dark Mode) -->
+    <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover -z-10 hidden dark:block">
+      <source src="bgvideo/19289-300877402.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
     <div
       class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden"
     >
