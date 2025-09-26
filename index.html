@@ -13,39 +13,14 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/style.css" />
-    <style>
-      /* Subtle upward "pop" for the five desktop nav buttons only */
-      /* Smooth, GPU-accelerated transform with reduced-motion support */
-      @media (min-width: 768px) {
-        nav > ul.md-nav > li > a {
-          display: inline-flex; /* keep children aligned and allow transform */
-          transform: translateY(0);
-          will-change: transform;
-          transition: transform 300ms cubic-bezier(.22,.9,.3,1);
-        }
-
-        nav > ul.md-nav > li > a:hover,
-        nav > ul.md-nav > li > a:focus {
-          transform: translateY(-4px);
-        }
-      }
-
-      /* Respect users who prefer reduced motion */
-      @media (prefers-reduced-motion: reduce) {
-        nav > ul.md-nav > li > a {
-          transition: none;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body class="overflow-x-hidden font-Outfit leading-6 dark:bg-darkTheme dark:text-white ">
-    <!-- Video background for homepage -->
+    <!-- All your body content remains the same -->
     <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover -z-10 dark:hidden">
       <source src="bgvideo/vecteezy_abstract-white-wavy-background_2015487.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <!-- Video background for homepage (Dark Mode) -->
     <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover -z-10 hidden dark:block">
       <source src="bgvideo/19289-300877402.mp4" type="video/mp4">
       Your browser does not support the video tag.
@@ -53,8 +28,7 @@
     <div
       class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden"
     >
-      <!-- <img src="./images/header-bg-color.png" alt="" class="w-full >" /> -->
-    </div>
+      </div>
 
     <nav
       class="w-full fixed left-0 top-0 px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50"
@@ -74,7 +48,7 @@
       >
         <li><a href="#top">Home</a></li>
         <li><a href="#about">About me</a></li>
-        <li><a href="#services">Service</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#work">my Work</a></li>
         <li><a href="#contact">Contact me</a></li>
       </ul>
@@ -110,7 +84,6 @@
           />
         </button>
       </div>
-      <!----------mobile menu------------>
       <ul
         id="sideMenu"
         class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-sky-50 transition duration-500 font-Ovo dark:bg-darkHover dark:text-white"
@@ -130,16 +103,13 @@
 
         <li><a href="#top" onclick="closeMenu()">Home</a></li>
         <li><a href="#about" onclick="closeMenu()">About me</a></li>
-        <li><a href="#services" onclick="closeMenu()">Service</a></li>
+        <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
         <li><a href="#work" onclick="closeMenu()">my Work</a></li>
         <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
       </ul>
     </nav>
 
-    <!---------------header section------------------>
-    <!-- Full-bleed hero wrapper. Nav offset is 5vh. -->
-  <div id="top" class="relative w-full mt-[4rem]" style="height: calc(100vh - 4rem);">
-      <!-- Centered content inside the hero -->
+    <div id="top" class="relative w-full mt-[4rem]" style="height: calc(100vh - 4rem);">
       <div class="w-11/12 max-w-3xl text-center mx-auto h-full flex flex-col items-center justify-center gap-4">
         <img
           src="./images/homepic.png"
@@ -166,7 +136,7 @@
           <a
             href="https://drive.google.com/file/d/1mEwlgN55dc_ioBKGxaHEThoaKoJf8A1h/view?usp=drive_link"
             download
-            class="px-10 py-3 border rounded-full hover:bg-lightHover duration-500 border-gray-500 flex items-center gap-2 bg-white dark:text-black""
+            class="px-10 py-3 border rounded-full hover:bg-lightHover duration-500 border-gray-500 flex items-center gap-2 bg-white dark:text-black"
           >
             My resume
             <img
@@ -179,7 +149,6 @@
       </div>
     </div>
 
-    <!------------------about section------------------->
     <div id="about" class="w-full px-[12%] py-10 scroll-mt-11">
       <h4 class="text-center mb-2 text-lg font-Ovo">Introduction</h4>
       <h2 class="text-center text-5xl font-Ovo">About me</h2>
@@ -191,21 +160,7 @@
             alt=""
             class="w-64 sm:w-80 rounded-3xl max-w-none"
           />
-          <!-- <div
-            class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex item-center justify-center"
-          >
-            <img
-              src="./images/circular-text.png"
-              alt=""
-              class="w-full animate-spin_slow"
-            />
-            <img
-              src="./images/dev-icon.png"
-              alt=""
-              class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-            />
-          </div> -->
-        </div>
+          </div>
         <div class="flex-1">
           <p class="mb-10 max-w-2xl font-Ovo">
             I'm a final-year B.Tech Computer Science student with an unwavering passion for programming and full-stack development. My journey in technology is driven by curiosity and the desire to create innovative solutions, I bring ideas to life through code.
@@ -280,7 +235,7 @@
           </h4>
           <ul class="flex items-center gap-3 sm:gap-5">
             <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
-              <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://leetcode.com/u/saikiransandeep/" target="_blank" rel="noopener noreferrer">
                 <img id="leetcode-logo" src="./images/leetcode.png" alt="LeetCode" class="w-5 sm:w-7" data-light="./images/leetcode.png" data-dark="./images/LeetCode_Logo_1.png" />
               </a>
             </li>
@@ -313,25 +268,91 @@
       </div>
     </div>
 
-    <!-- ------------------service section------------------->
-    <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
-      <h4 class="text-center mb-2 text-lg font-Ovo">What i offer</h4>
-      <h2 class="text-center text-5xl font-Ovo">My Services</h2>
+    <div id="skills" class="w-full px-[12%] py-10 scroll-mt-20">
+      <h2 class="text-center text-5xl font-Ovo mb-12">My Skills</h2>
       <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
         I am a frontend developer from california, USa with 10 years of
         experience in multiple companies like Microsoft, Tesla and Apple.
       </p>
+      <div id="skills" class="w-full px-[12%] py-10 scroll-mt-20">
+      
+      <div class="skills-marquee py-4">
+        <div class="skills-marquee-content">
+          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="h-16 mb-2" />
+            <p class="font-semibold">HTML</p>
+          </div>
+          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="h-16 mb-2" />
+            <p class="font-semibold">CSS</p>
+          </div>
+          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="h-16 mb-2" />
+            <p class="font-semibold">JavaScript</p>
+          </div>
+          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="h-16 mb-2" />
+            <p class="font-semibold">React</p>
+          </div>
+          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="h-16 mb-2" />
+            <p class="font-semibold">Java</p>
+          </div>
+          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="h-16 mb-2" />
+            <p class="font-semibold">Python</p>
+          </div>
+          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+            <p class="text-2xl font-bold h-16 mb-2 flex items-center">DSA</p>
+            <p class="font-semibold text-center">Data Structures & Algorithms</p>
+          </div>
+          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="h-16 mb-2" />
+            <p class="font-semibold">HTML</p>
+          </div>
+          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="h-16 mb-2" />
+            <p class="font-semibold">CSS</p>
+          </div>
+          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="h-16 mb-2" />
+            <p class="font-semibold">JavaScript</p>
+          </div>
+          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="h-16 mb-2" />
+            <p class="font-semibold">React</p>
+          </div>
+          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="h-16 mb-2" />
+            <p class="font-semibold">Java</p>
+          </div>
+          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="h-16 mb-2" />
+            <p class="font-semibold">Python</p>
+          </div>
+          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+            <p class="text-2xl font-bold h-16 mb-2 flex items-center">DSA</p>
+            <p class="font-semibold text-center">Data Structures & Algorithms</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>      
+    
 
-      <div class="grid grid-cols-auto gap-6 my-10">
+    <div class="grid grid-cols-auto gap-6 my-10">
         <div
           class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white"
         >
-          <img src="./images/web-icon.png" alt="" class="w-10" />
-          <h3 class="text-lg my-4 text-gray-700 dark:text-white">Web design</h3>
+          <img src="./images/badges1.png" alt="" class="w-14" />
+          <h3 class="text-lg my-4 text-gray-700 dark:text-white">ExcelR</h3>
           <p class="text-sm text-gray-600 leading-4 dark:text-white/80">
-            Web development is the process of building, programing...
+            Jul 2024
+            Completed a 6-week short-term
+            internship in Full Stack Java
+            Development...
           </p>
-          <a href="" class="flex items-center gap-2 text-sm mt-5"
+          <a href="https://drive.google.com/file/d/1BDWopu_lZyFcWFbOA1z2wY8f33k_flia/view?usp=sharing" class="flex items-center gap-2 text-sm mt-5"
             >Read more <img src="./images/right-arrow.png" alt="" class="w-4"
           /></a>
         </div>
@@ -339,12 +360,14 @@
         <div
           class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white"
         >
-          <img src="./images/mobile-icon.png" alt="" class="w-10" />
-          <h3 class="text-lg my-4 text-gray-700 dark:text-white">Mobile App</h3>
+          <img src="./images/badges2.png" alt="" class="w-14" />
+          <h3 class="text-lg my-4 text-gray-700 dark:text-white">Edu Skills</h3>
           <p class="text-sm text-gray-600 leading-4 dark:text-white/80">
-            Web development is the process of building, programing...
+            Jul 2025
+            Cloud Gen AI Virtual Internship
+            Provided by AWS academy...
           </p>
-          <a href="" class="flex items-center gap-2 text-sm mt-5"
+          <a href="https://drive.google.com/file/d/12m_Bw17LtrQBew-BEVvPfXAkYnmyv26X/view?usp=sharing" class="flex items-center gap-2 text-sm mt-5"
             >Read more <img src="./images/right-arrow.png" alt="" class="w-4"
           /></a>
         </div>
@@ -352,14 +375,16 @@
         <div
           class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white"
         >
-          <img src="./images/ui-icon.png" alt="" class="w-10" />
+          <img src="./images/badges3.png" alt="" class="w-14" />
           <h3 class="text-lg my-4 text-gray-700 dark:text-white">
-            UI / UX design
+            Edu Skills
           </h3>
           <p class="text-sm text-gray-600 leading-4 dark:text-white/80">
-            Web development is the process of building, programing...
+            Oct 2024
+            Data Engineering Virtual Internship
+            Provided by AWS academy...
           </p>
-          <a href="" class="flex items-center gap-2 text-sm mt-5"
+          <a href="https://drive.google.com/file/d/1BPPwVWwK0GgRk3skMXBdWK2SSaR2jV8E/view?usp=sharing" class="flex items-center gap-2 text-sm mt-5"
             >Read more <img src="./images/right-arrow.png" alt="" class="w-4"
           /></a>
         </div>
@@ -367,20 +392,22 @@
         <div
           class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white"
         >
-          <img src="./images/graphics-icon.png" alt="" class="w-10" />
+          <img src="./images/badges4.png" alt="" class="w-10" />
           <h3 class="text-lg my-4 text-gray-700 dark:text-white">
-            Graphics design
+            Infosys
           </h3>
           <p class="text-sm text-gray-600 leading-4 dark:text-white/80">
-            Web development is the process of building, programing...
+            Completed a Java programming course from a reputable institution Infosys
           </p>
-          <a href="" class="flex items-center gap-2 text-sm mt-5"
+          <a href="https://drive.google.com/file/d/1E_lP6pJw4165kzJQ-0MWuXlRZ3pQcG9j/view?usp=sharing" class="flex items-center gap-2 text-sm mt-5"
             >Read more <img src="./images/right-arrow.png" alt="" class="w-4"
           /></a>
         </div>
       </div>
-    </div>
-    <!-- ------------------work section------------------->
+      </div>
+      </div>
+    
+    
     <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
       <h4 class="text-center mb-2 text-lg font-Ovo">My portfolio</h4>
       <h2 class="text-center text-5xl font-Ovo">My latest work</h2>
@@ -476,7 +503,6 @@
         />
       </a>
     </div>
-    <!-- ------------------contact section------------------->
     <div
       id="contact"
       class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./image/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none"
@@ -529,7 +555,6 @@
       </form>
     </div>
 
-    <!-- ------------------footer section------------------->
     <div class="mt-20">
       <div class="text-center">
         <img
