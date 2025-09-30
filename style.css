@@ -225,3 +225,23 @@ html, body {
 .dark ::-webkit-scrollbar-thumb:hover {
   background: #9ca3af;
 }
+
+/* Fix AOS and hover transform conflict - SIMPLIFIED VERSION */
+.aos-hover-fix {
+  transition: all 0.5s ease !important;
+}
+
+.aos-hover-fix:hover {
+  transform: translateY(-4px) !important;
+}
+
+/* Reduced motion support for hover fix */
+@media (prefers-reduced-motion: reduce) {
+  .aos-hover-fix {
+    transition: none !important;
+  }
+  
+  .aos-hover-fix:hover {
+    transform: none !important;
+  }
+}
