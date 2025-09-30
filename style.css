@@ -4,6 +4,10 @@
 
 /* Combined CSS for Saikiran Portfolio */
 
+html, body {
+  overflow-x: hidden;
+}
+
 /* Subtle upward "pop" for the five desktop nav buttons only */
 /* Smooth, GPU-accelerated transform with reduced-motion support */
 @media (min-width: 768px) {
