@@ -86,28 +86,86 @@
         </button>
       </div>
       <ul
-        id="sideMenu"
-        class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-sky-50 transition duration-500 font-Ovo dark:bg-darkHover dark:text-white"
-      >
-        <div class="absolute right-6 top-6" onclick="closeMenu()">
-          <img
-            src="./images/close-black.png"
-            alt=""
-            class="w-5 cursor-pointer dark:hidden"
-          />
-          <img
-            src="./images/close-white.png"
-            alt=""
-            class="w-5 cursor-pointer hidden dark:block"
-          />
-        </div>
+  id="sideMenu"
+  class="flex md:hidden flex-col gap-2 py-8 px-6 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-sky-50 transition duration-500 font-Ovo dark:bg-darkHover dark:text-white"
+>
+  <div class="absolute right-6 top-6" onclick="closeMenu()">
+    <img
+      src="./images/close-black.png"
+      alt="Close menu"
+      class="w-5 cursor-pointer dark:hidden"
+    />
+    <img
+      src="./images/close-white.png"
+      alt="Close menu"
+      class="w-5 cursor-pointer hidden dark:block"
+    />
+  </div>
 
-        <li><a href="#top" onclick="closeMenu()">Home</a></li>
-        <li><a href="#about" onclick="closeMenu()">About me</a></li>
-        <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
-        <li><a href="#work" onclick="closeMenu()">my Work</a></li>
-        <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
-      </ul>
+  <!-- Updated Profile Section - Photo on left, text on right -->
+  <div class="flex items-center gap-3 mb-8 pt-4 border-b border-gray-200 dark:border-gray-600 pb-6">
+    <img
+      src="./images/homepic.png"
+      alt="Saikiran"
+      class="w-12 h-12 rounded-full border-2 border-gray-300 dark:border-gray-500"
+    />
+    <div class="flex flex-col">
+      <h3 class="font-semibold text-gray-800 dark:text-white">Saikiran</h3>
+      <p class="text-xs text-gray-600 dark:text-gray-300">Computer Science Student</p>
+    </div>
+  </div>
+
+  <!-- Menu Items with Hover Effects on cursor movement -->
+  <li>
+    <a href="#top" onclick="closeMenu()" class="flex items-center gap-3 p-3 rounded-lg transition-all duration-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:shadow-md group">
+      <!-- Home icon -->
+      <svg class="w-5 h-5 text-gray-700 dark:text-gray-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+      </svg>
+      <span class="text-gray-800 dark:text-gray-200 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 font-medium">Home</span>
+    </a>
+  </li>
+  
+  <li>
+    <a href="#about" onclick="closeMenu()" class="flex items-center gap-3 p-3 rounded-lg transition-all duration-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:shadow-md group">
+      <!-- User icon -->
+      <svg class="w-5 h-5 text-gray-700 dark:text-gray-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+      </svg>
+      <span class="text-gray-800 dark:text-gray-200 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 font-medium">About me</span>
+    </a>
+  </li>
+  
+  <li>
+    <a href="#skills" onclick="closeMenu()" class="flex items-center gap-3 p-3 rounded-lg transition-all duration-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:shadow-md group">
+      <!-- Skills icon -->
+      <svg class="w-5 h-5 text-gray-700 dark:text-gray-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+      </svg>
+      <span class="text-gray-800 dark:text-gray-200 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 font-medium">Skills</span>
+    </a>
+  </li>
+  
+  <li>
+    <a href="#work" onclick="closeMenu()" class="flex items-center gap-3 p-3 rounded-lg transition-all duration-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:shadow-md group">
+      <!-- Work icon -->
+      <svg class="w-5 h-5 text-gray-700 dark:text-gray-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2V6"/>
+      </svg>
+      <span class="text-gray-800 dark:text-gray-200 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 font-medium">my Work</span>
+    </a>
+  </li>
+  
+  <li>
+    <a href="#contact" onclick="closeMenu()" class="flex items-center gap-3 p-3 rounded-lg transition-all duration-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:shadow-md group">
+      <!-- Contact icon -->
+      <svg class="w-5 h-5 text-gray-700 dark:text-gray-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+      </svg>
+      <span class="text-gray-800 dark:text-gray-200 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 font-medium">Contact me</span>
+    </a>
+  </li>
+</ul>
     </nav>
 
     <div id="top" class="relative w-full mt-[4rem] lg:mb-20" style="height: calc(100vh - 4rem);">
