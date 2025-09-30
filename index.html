@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body class="overflow-x-hidden font-Outfit leading-6 dark:bg-darkTheme dark:text-white ">
     <!-- All your body content remains the same -->
@@ -109,20 +110,22 @@
       </ul>
     </nav>
 
-    <div id="top" class="relative w-full mt-[4rem]" style="height: calc(100vh - 4rem);">
+    <div id="top" class="relative w-full mt-[4rem] lg:mb-20" style="height: calc(100vh - 4rem);">
       <div class="w-11/12 max-w-3xl text-center mx-auto h-full flex flex-col items-center justify-center gap-4">
         <img
           src="./images/homepic.png"
           alt=""
           class="rounded-full w-32 mt-16"
+          data-aos="fade-up"
+          data-aos-delay="100"
         />
-        <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3 font-Ovo">
+        <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3 font-Ovo" data-aos="fade-up" data-aos-delay="200">
           Hi! I'm Saikiran <img src="./images/hand-icon.png" alt="" class="w-6" />
         </h3>
-        <h1 class="text-3xl sm:text-6xl lg:text-[66xl] font-Ovo">
+        <h1 class="text-3xl sm:text-6xl lg:text-[66xl] font-Ovo" data-aos="fade-up" data-aos-delay="300">
           Full Stack Web Developer
         </h1>
-        <p class="max-w-2xl mx-auto font-Ovo">
+        <p class="max-w-2xl mx-auto font-Ovo" data-aos="fade-up" data-aos-delay="400">
           I’m focused on sharpening my development skills by working on impactful projects within dynamic, collaborative teams.
         </p>
 
@@ -150,25 +153,25 @@
     </div>
 
     <div id="about" class="w-full px-[12%] py-10 scroll-mt-11">
-      <h4 class="text-center mb-2 text-lg font-Ovo">Introduction</h4>
-      <h2 class="text-center text-5xl font-Ovo">About me</h2>
-
+      <h2 class="text-center text-5xl font-Ovo" data-aos="zoom-in" data-aos-delay="200">About me</h2>
+      <h4 class="text-center mb-2 text-lg font-Ovo" data-aos="zoom-in" data-aos-delay="100">Introduction</h4>
+      
       <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
-        <div class="max-w-max mx-auto relative">
+        <div class="max-w-max mx-auto relative" data-aos="fade-right">
           <img
             src="./images/mee1.png.jpg"
             alt=""
             class="w-64 sm:w-80 rounded-3xl max-w-none"
           />
           </div>
-        <div class="flex-1">
-          <p class="mb-10 max-w-2xl font-Ovo">
+        <div class="flex-1" >
+          <p class="mb-10 max-w-2xl font-Ovo" data-aos="fade-left" data-aos-delay="200">
             I'm a final-year B.Tech Computer Science student with an unwavering passion for programming and full-stack development. My journey in technology is driven by curiosity and the desire to create innovative solutions, I bring ideas to life through code.
           </p>
 
           <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
             <li
-              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" data-aos="zoom-in" data-aos-delay="100"
             >
               <img
                 src="./images/code-icon.png"
@@ -189,7 +192,7 @@
             </li>
 
             <li
-              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" data-aos="zoom-in" data-aos-delay="200"
             >
               <img
                 src="./images/edu-icon.png"
@@ -210,7 +213,7 @@
             </li>
 
             <li
-              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" data-aos="zoom-in" data-aos-delay="300"
             >
               <img
                 src="./images/project-icon.png"
@@ -234,31 +237,31 @@
             Find Me On
           </h4>
           <ul class="flex items-center gap-3 sm:gap-5">
-            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" data-aos="fade-left" data-aos-delay="100">
               <a href="https://leetcode.com/u/saikiransandeep/" target="_blank" rel="noopener noreferrer">
                 <img id="leetcode-logo" src="./images/leetcode.png" alt="LeetCode" class="w-5 sm:w-7" data-light="./images/leetcode.png" data-dark="./images/LeetCode_Logo_1.png" />
               </a>
             </li>
 
-            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" data-aos="fade-left" data-aos-delay="200">
               <a href="https://github.com/saikiransandeep" target="_blank" rel="noopener noreferrer">
                 <img id="github-logo" src="./images/github.png" alt="GitHub" class="w-5 sm:w-7" data-light="./images/github.png" data-dark="./images/gitdark.png" />
               </a>
             </li>
 
-            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" data-aos="fade-left" data-aos-delay="300">
               <a href="https://auth.geeksforgeeks.org/" target="_blank" rel="noopener noreferrer">
                 <img src="./images/gfg.png" alt="GFG" class="w-5 sm:w-7" />
               </a>
             </li>
 
-            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" data-aos="fade-left" data-aos-delay="400">
               <a href="https://codolio.com/profile/sai%20kiran" target="_blank" rel="noopener noreferrer">
                 <img src="./images/codolio.png" alt="Codolio" class="w-5 sm:w-7" />
               </a>
             </li>
 
-            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+            <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50" data-aos="fade-left" data-aos-delay="500">
               <a href="https://www.linkedin.com/in/saikiransandeep" target="_blank" rel="noopener noreferrer">
                 <img src="./images/linkedinico.png" alt="linkedin" class="w-5 sm:w-7" />
               </a>
@@ -269,80 +272,59 @@
     </div>
 
     <div id="skills" class="w-full px-[12%] py-10 scroll-mt-20">
-      <h2 class="text-center text-5xl font-Ovo mb-12">My Skills</h2>
-      <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-        I am a frontend developer from california, USa with 10 years of
-        experience in multiple companies like Microsoft, Tesla and Apple.
-      </p>
-      <div id="skills" class="w-full px-[12%] py-10 scroll-mt-20">
-      
-      <div class="skills-marquee py-4">
-        <div class="skills-marquee-content">
-          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="h-16 mb-2" />
-            <p class="font-semibold">HTML</p>
-          </div>
-          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="h-16 mb-2" />
-            <p class="font-semibold">CSS</p>
-          </div>
-          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="h-16 mb-2" />
-            <p class="font-semibold">JavaScript</p>
-          </div>
-          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="h-16 mb-2" />
-            <p class="font-semibold">React</p>
-          </div>
-          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="h-16 mb-2" />
-            <p class="font-semibold">Java</p>
-          </div>
-          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="h-16 mb-2" />
-            <p class="font-semibold">Python</p>
-          </div>
-          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
-            <p class="text-2xl font-bold h-16 mb-2 flex items-center">DSA</p>
-            <p class="font-semibold text-center">With Python and java</p>
-          </div>
-          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="h-16 mb-2" />
-            <p class="font-semibold">HTML</p>
-          </div>
-          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="h-16 mb-2" />
-            <p class="font-semibold">CSS</p>
-          </div>
-          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="h-16 mb-2" />
-            <p class="font-semibold">JavaScript</p>
-          </div>
-          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="h-16 mb-2" />
-            <p class="font-semibold">React</p>
-          </div>
-          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="h-16 mb-2" />
-            <p class="font-semibold">Java</p>
-          </div>
-          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="h-16 mb-2" />
-            <p class="font-semibold">Python</p>
-          </div>
-          <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
-            <p class="text-2xl font-bold h-16 mb-2 flex items-center">DSA</p>
-            <p class="font-semibold text-center">Data Structures & Algorithms</p>
-          </div>
-          
-        </div>
+  <h2 class="text-center text-5xl font-Ovo mb-12" data-aos="fade-up">My Skills</h2>
+  <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo" data-aos="fade-up" data-aos-delay="100">
+    I'm a passionate full-stack developer skilled in modern web technologies, with expertise in frontend development, programming languages, and problem-solving through Data Structures & Algorithms.
+  </p>
+  
+  <div class="skills-marquee py-4">
+    <div class="skills-marquee-content">
+      <!-- Remove duplicates - keep only one set of skills -->
+      <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="h-16 mb-2" />
+        <p class="font-semibold">HTML</p>
       </div>
-    </div>      
+      <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="h-16 mb-2" />
+        <p class="font-semibold">CSS</p>
+      </div>
+      <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="h-16 mb-2" />
+        <p class="font-semibold">JavaScript</p>
+      </div>
+      <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="h-16 mb-2" />
+        <p class="font-semibold">React</p>
+      </div>
+      <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="h-16 mb-2" />
+        <p class="font-semibold">Java</p>
+      </div>
+      <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="h-16 mb-2" />
+        <p class="font-semibold">Python</p>
+      </div>
+      <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+        <p class="text-2xl font-bold h-16 mb-2 flex items-center">DSA</p>
+        <p class="font-semibold text-center">With Python and Java</p>
+      </div>
+      <!-- Add more skills if needed -->
+      <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" class="h-16 mb-2" />
+        <p class="font-semibold">Tailwind</p>
+      </div>
+      <div class="skill-card flex flex-col items-center justify-center p-6 border border-gray-400 rounded-lg cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="h-16 mb-2" />
+        <p class="font-semibold">Git</p>
+      </div>
+    </div>
+  </div>
+</div>      
     
-
+    <div id="skills" class="w-full px-[12%] py-10 scroll-mt-20">
     <div class="grid grid-cols-auto gap-6 my-10">
         <div
-          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white"
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white" data-aos="fade-down-short" data-aos-delay="100"
         >
           <img src="./images/badges1.png" alt="" class="w-14" />
           <h3 class="text-lg my-4 text-gray-700 dark:text-white">ExcelR</h3>
@@ -358,7 +340,7 @@
         </div>
 
         <div
-          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white"
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white" data-aos="fade-down-short" data-aos-delay="200"
         >
           <img src="./images/badges2.png" alt="" class="w-14" />
           <h3 class="text-lg my-4 text-gray-700 dark:text-white">Edu Skills</h3>
@@ -373,7 +355,7 @@
         </div>
 
         <div
-          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white"
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white" data-aos="fade-down-short" data-aos-delay="300"
         >
           <img src="./images/badges3.png" alt="" class="w-14" />
           <h3 class="text-lg my-4 text-gray-700 dark:text-white">
@@ -390,7 +372,7 @@
         </div>
 
         <div
-          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white"
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white" data-aos="fade-down-short" data-aos-delay="400"
         >
           <img src="./images/badges4.png" alt="" class="w-10" />
           <h3 class="text-lg my-4 text-gray-700 dark:text-white">
@@ -409,15 +391,15 @@
     
     
     <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
-      <h4 class="text-center mb-2 text-lg font-Ovo">My portfolio</h4>
-      <h2 class="text-center text-5xl font-Ovo">My latest work</h2>
-      <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+      <h4 class="text-center mb-2 text-lg font-Ovo" data-aos="fade-up">My portfolio</h4>
+      <h2 class="text-center text-5xl font-Ovo" data-aos="fade-up" data-aos-delay="100">My latest work</h2>
+      <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo" data-aos="fade-up" data-aos-delay="200">
         Welcome to my web development portfolio! Explore a collection of
         projects showcasing my expertise in front-end development.
       </p>
       <div class="grid grid-cols-auto my-10 gap-5 dark:text-black">
         <div
-          class="aspect-square bg-[url('./images/work-1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+          class="aspect-square bg-[url('./images/work-1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" data-aos="zoom-in" data-aos-delay="100"
         >
           <div
             class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
@@ -434,7 +416,7 @@
           </div>
         </div>
         <div
-          class="aspect-square bg-[url('./images/work-2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+          class="aspect-square bg-[url('./images/work-2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" data-aos="zoom-in" data-aos-delay="200"
         >
           <div
             class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
@@ -451,7 +433,7 @@
           </div>
         </div>
         <div
-          class="aspect-square bg-[url('./images/work-3.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+          class="aspect-square bg-[url('./images/work-3.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" data-aos="zoom-in" data-aos-delay="300"
         >
           <div
             class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
@@ -470,7 +452,7 @@
           </div>
         </div>
         <div
-          class="aspect-square bg-[url('./images/work-4.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+          class="aspect-square bg-[url('./images/work-4.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" data-aos="zoom-in" data-aos-delay="400"
         >
           <div
             class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
@@ -505,18 +487,18 @@
     </div>
     <div
       id="contact"
-      class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./image/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none"
+      class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none"
     >
-      <h4 class="text-center mb-2 text-lg font-Ovo">Connect with me</h4>
-      <h2 class="text-center text-5xl font-Ovo">Get in touch</h2>
-      <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+      <h4 class="text-center mb-2 text-lg font-Ovo" data-aos="fade-up">Connect with me</h4>
+      <h2 class="text-center text-5xl font-Ovo" data-aos="fade-up" data-aos-delay="100">Get in touch</h2>
+      <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo" data-aos="fade-up" data-aos-delay="200">
         I'd love to hear from you! If you have any questions, comments or
         feedback, please use the form below.
       </p>
       <form
         method="POST"
         action="https://api.web3forms.com/submit"
-        class="max-w-2xl mx-auto"
+        class="max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="300"
       >
         <input
           type="hidden"
@@ -590,6 +572,7 @@
         </ul>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

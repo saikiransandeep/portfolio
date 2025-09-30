@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Combined CSS for Saikiran Portfolio */
+
 /* Subtle upward "pop" for the five desktop nav buttons only */
 /* Smooth, GPU-accelerated transform with reduced-motion support */
 @media (min-width: 768px) {
@@ -21,6 +27,7 @@
   }
 }
 
+/* Skills Marquee Styles */
 .skills-marquee {
   overflow: hidden;
   position: relative;
@@ -64,8 +71,13 @@
   width: 130px;
   height: 130px;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Mobile adjustments */
 @media (max-width: 767px) {
   /* For screens smaller than Tailwind's 'md' breakpoint */
   .skill-card {
@@ -73,6 +85,139 @@
     height: 90px; /* Adjust to your desired smaller height */
   }
   .skills-marquee-content {
+    gap: 1rem; /* Corresponds to gap-4, or adjust as needed */
     animation-duration: 5s; /* Speeds up animation from 10s to 5s on mobile */
   }
+}
+
+/* AOS Fade Down Animations */
+[data-aos="fade-down"] {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition-property: opacity, transform;
+}
+
+[data-aos="fade-down"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom fade-down variations */
+[data-aos="fade-down-short"] {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition-property: opacity, transform;
+}
+
+[data-aos="fade-down-short"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-aos="fade-down-long"] {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition-property: opacity, transform;
+}
+
+[data-aos="fade-down-long"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Duration variations for AOS */
+[data-aos][data-aos-duration="100"] {
+  transition-duration: 100ms;
+}
+
+[data-aos][data-aos-duration="200"] {
+  transition-duration: 200ms;
+}
+
+[data-aos][data-aos-duration="300"] {
+  transition-duration: 300ms;
+}
+
+[data-aos][data-aos-duration="400"] {
+  transition-duration: 400ms;
+}
+
+[data-aos][data-aos-duration="500"] {
+  transition-duration: 500ms;
+}
+
+[data-aos][data-aos-duration="600"] {
+  transition-duration: 600ms;
+}
+
+/* Reduced motion support for all animations */
+@media (prefers-reduced-motion: reduce) {
+  nav > ul.md-nav > li > a,
+  .skills-marquee-content,
+  [data-aos] {
+    transition: none !important;
+    animation: none !important;
+  }
+  
+  nav > ul.md-nav > li > a:hover,
+  nav > ul.md-nav > li > a:focus {
+    transform: none;
+  }
+  
+  .skills-marquee-content:hover {
+    animation-play-state: inherit;
+  }
+  
+  [data-aos].aos-animate {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Additional mobile optimizations */
+@media (max-width: 480px) {
+  .skill-card {
+    width: 85px;
+    height: 85px;
+    padding: 0.75rem;
+  }
+  
+  .skill-card img {
+    height: 2.5rem;
+  }
+  
+  .skills-marquee-content {
+    gap: 0.75rem;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #6b7280;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
 }
