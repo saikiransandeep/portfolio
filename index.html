@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saikiran portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -215,13 +215,53 @@
       <h4 class="text-center mb-2 text-lg font-Ovo" data-aos="zoom-in" data-aos-delay="400">Introduction</h4>
       
       <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
-        <div class="max-w-max mx-auto relative" data-aos="fade-right">
-          <img
-            src="./images/mee1.png.jpg"
-            alt=""
-            class="w-64 sm:w-80 rounded-3xl max-w-none"
-          />
+        <div class="mb-16">
+      <h2 class="text-center mb-2 text-lg font-Ovo  text-gray-800 dark:text-white" data-aos="fade-down-short" data-aos-delay="100">Developer Metrics</h2>
+      <div class="flex justify-center" data-aos="fade-down-short" data-aos-delay="200" >
+        <div class="gradient-border">
+          <div class="gradient-border-inner w-64 sm:w-80 p-6">
+            <h3 class="text-center mb-2 text-lg font-Ovo text-gray-800 dark:text-white" >
+              Skill Analytics
+            </h3>
+            
+            <div class="space-y-5">
+              <!-- LeetCode -->
+              <div class="text-center pb-4 border-b border-gray-200 dark:border-gray-700">
+                <div class="flex items-center justify-center gap-2 mb-2">
+                  <!-- <img src="https://cdn.iconscout.com/icon/free/png-256/leetcode-3521542-2944960.png" alt="LeetCode" class="w-6 h-6"> -->
+                  <span class="text-sm font-semibold text-gray-700 dark:text-gray-300">Problems Solved</span>
+                </div>
+                <div class="text-4xl font-bold bg-gradient-to-r from-[#b820e6] to-[#da7d20] bg-clip-text text-transparent">
+                  <span class="counter-number" data-target="182" data-platform="leetcode" >0</span>
+                </div>
+                <div class="text-xs text-gray-500 dark:text-gray-400 mt-1" >Across Platforms</div>
+              </div>
+              
+              <!-- GeeksforGeeks -->
+              <div class="text-center pb-4 border-b border-gray-200 dark:border-gray-700">
+                <div class="flex items-center justify-center gap-2 mb-2">
+                  <!-- <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200716222246/Path-219.png" alt="GFG" class="w-6 h-6"> -->
+                  <span class="text-sm font-semibold text-gray-700 dark:text-gray-300">GitHub Commits</span>
+                </div>
+                <div class="text-4xl font-bold bg-gradient-to-r from-[#b820e6] to-[#da7d20] bg-clip-text text-transparent">
+                  <span class="counter-number" data-target="94" data-platform="gfg">0</span>
+                </div>
+                <div class="text-xs text-gray-500 dark:text-gray-400 mt-1">Project Contributions</div>
+              </div>
+              
+              <!-- Total -->
+              <div class="text-center">
+                <div class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Contests Attended</div>
+                <div class="text-5xl font-bold bg-gradient-to-r from-[#b820e6] to-[#da7d20] bg-clip-text text-transparent">
+                  <span class="counter-number" data-target="21" data-platform="total">0</span>+
+                </div>
+                <div class="text-xs text-gray-500 dark:text-gray-400 mt-1">Competitive Programming</div>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
         <div class="flex-1" >
           <p class="mb-10 max-w-2xl font-Ovo" data-aos="fade-left" data-aos-delay="300">
             I'm a final-year B.Tech Computer Science student with an unwavering passion for programming and full-stack development. My journey in technology is driven by curiosity and the desire to create innovative solutions, I bring ideas to life through code.
@@ -266,7 +306,7 @@
                 Education
               </h3>
               <p class="text-gray-600 text-sm dark:text-white/80">
-                B.Tech in Computer Science
+                B.Tech in Computer Science(2022-26) 
               </p>
             </li>
 
@@ -463,16 +503,16 @@
             class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
           >
             <div>
-              <h2 class="font-semibold">Registration Form</h2>
+              <h2 class="font-semibold">RegForm</h2>
               <p class="text-sm text-gray-700">Tech for Girls</p>
             </div>
+            <a href="https://saikiransandeep.github.io/Tech-for-girls/" target="_blank" rel="noopener noreferrer">
             <div
               class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-fuchsia-200 transition"
-            >
-            <a href="https://saikiransandeep.github.io/Tech-for-girls/" target="_blank" rel="noopener noreferrer">
-              <img src="./images/send-icon.png" alt="" class="w-5" />
-              </a>
+            >            
+              <img src="./images/send-icon.png" alt="" class="w-5" />              
             </div>
+            </a>
           </div>
         </div>
         <div
@@ -480,16 +520,18 @@
         >
           <div
             class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
-          >
+          >          
             <div>
-              <h2 class="font-semibold">SMA app</h2>
-              <p class="text-sm text-gray-700">Data App</p>
+              <h2 class="font-semibold">Syncara</h2>
+              <p class="text-sm text-gray-700">Cloud App</p>
             </div>
+            <a href="https://syncara-sma.vercel.app/" target="_blank" rel="noopener noreferrer">
             <div
               class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-fuchsia-200 transition"
             >
               <img src="./images/send-icon.png" alt="" class="w-5" />
             </div>
+            </a>
           </div>
         </div>
         <div
@@ -502,13 +544,13 @@
               <h2 class="font-semibold">QuickShow</h2>
               <p class="text-sm text-gray-700">Movie Booking</p>
             </div>
+            <a href="https://quickshow-client-one-alpha.vercel.app/" target="_blank" rel="noopener noreferrer">
             <div
               class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-fuchsia-200 transition"
-            >
-            <a href="https://quickshow-client-one-alpha.vercel.app/" target="_blank" rel="noopener noreferrer">
-              <img src="./images/send-icon.png" alt="" class="w-5" />
-              </a>
+            >            
+              <img src="./images/send-icon.png" alt="" class="w-5" />              
             </div>
+            </a>
           </div>
         </div>
         <div
@@ -521,18 +563,18 @@
               <h2 class="font-semibold">MaxAI</h2>
               <p class="text-sm text-gray-700">ChatBot</p>
             </div>
+            <a href="https://max-ai-client.vercel.app/" target="_blank" rel="noopener noreferrer">
             <div
               class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-fuchsia-200 transition"
-            >
-            <a href="https://max-ai-client.vercel.app/" target="_blank" rel="noopener noreferrer">
-              <img src="./images/send-icon.png" alt="" class="w-5" />
-              </a>
+            >            
+              <img src="./images/send-icon.png" alt="" class="w-5" />              
             </div>
+            </a>
           </div>
         </div>
       </div>
       <a
-        href="#"
+        href="https://github.com/saikiransandeep"
         class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover"
         >Show more
         <img
@@ -554,8 +596,7 @@
       <h4 class="text-center mb-2 text-lg font-Ovo" data-aos="fade-up">Connect with me</h4>
       <h2 class="text-center text-5xl font-Ovo" data-aos="fade-up" data-aos-delay="100">Get in touch</h2>
       <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo" data-aos="fade-up" data-aos-delay="200">
-        I'd love to hear from you! If you have any questions, comments or
-        feedback, please use the form below.
+        I'd love to hear from you! Always open to discussing new projects, creative ideas, or opportunities to be part of something great.
       </p>
       <form
         method="POST"
@@ -626,10 +667,10 @@
       >
         <p>© 2025 Saikiran. All rights reserved.</p>
         <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
-          <li><a href="https://codolio.com/profile/sai%20kiran">Codolio</a></li>
-          <li><a href="https://github.com/saikiransandeep">GitHub</a></li>
+          <li><a href="https://codolio.com/profile/sai%20kiran" class="footer-link-pop">Codolio</a></li>
+          <li><a href="https://github.com/saikiransandeep" class="footer-link-pop">GitHub</a></li>
           <li>
-            <a href="https://www.linkedin.com/in/saikiransandeep">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/saikiransandeep" class="footer-link-pop">LinkedIn</a>
           </li>
         </ul>
       </div>
